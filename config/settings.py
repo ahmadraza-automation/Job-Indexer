@@ -104,3 +104,9 @@ SPECTACULAR_SETTINGS = {
 CELERY_BROKER_URL = os.environ.get("REDIS_URL", "redis://localhost:6379/0")
 CELERY_RESULT_BACKEND = CELERY_BROKER_URL
 CELERY_TIMEZONE = TIME_ZONE
+CELERY_BEAT_SCHEDULE = {
+    "schedule-active-job-sources": {
+        "task": "jobs.tasks.schedule_active_sources",
+        "schedule": 60.0,
+    },
+}
