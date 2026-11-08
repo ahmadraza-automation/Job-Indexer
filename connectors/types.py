@@ -21,3 +21,5 @@ class NormalizedJob:
     is_remote: bool | None = None
     posted_at: datetime | None = None
     raw: dict[str, Any] = field(default_factory=dict)
+    department: str = ""
+    updated_at: datetime | None = None

@@ -1,0 +1,29 @@
+{
+  "jobs": [
+    {
+      "id": 12345,
+      "title": "Senior Software Engineer",
+      "absolute_url": "https://boards.greenhouse.io/exampleco/jobs/12345",
+      "updated_at": "2026-10-30T12:15:00Z",
+      "first_published": "2026-10-01T09:00:00Z",
+      "location": {
+        "name": "New York, NY"
+      },
+      "departments": [
+        {
+          "id": 1,
+          "name": "Engineering"
+        }
+      ],
+      "offices": [
+        {
+          "id": 1,
+          "name": "New York"
+        }
+      ],
+      "content": "&lt;div&gt;&lt;p&gt;Build &amp; ship reliable systems.&lt;/p&gt;&lt;script&gt;ignore()&lt;/script&gt;&lt;/div&gt;",
+      "requisition_id": "ENG-123",
+      "metadata": []
+    }
+  ]
+}

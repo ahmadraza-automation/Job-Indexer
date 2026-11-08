@@ -19,3 +19,22 @@ Python 3.12, Django 5, Django REST Framework, PostgreSQL (full-text search), Cel
 7. When a connector is added, also update `docs/connectors/<platform>.md` and `COVERAGE.md`.
 8. Run tests yourself after each task and fix failures before finishing.
 9. Commit to git after each completed task with a clear message.
+
+## Adding a Greenhouse source
+
+Create a `Source` with `platform="greenhouse"`, `kind="ats"`, and the company's
+name in `name`. Set `config={"board_token": "<Greenhouse board slug>"}`; the
+connector validates the slug and retrieves jobs from Greenhouse's public board
+API. For example, in `python manage.py shell`:
+
+```python
+from jobs.models import Source
+
+Source.objects.create(
+    platform="greenhouse",
+    kind=Source.Kind.ATS,
+    name="Example Co",
+    base_url="https://boards.greenhouse.io/exampleco",
+    config={"board_token": "exampleco"},
+)
+```

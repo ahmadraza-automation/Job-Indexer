@@ -409,8 +409,13 @@ def _external_id(job: NormalizedJob) -> str:
 
 
 def _content_hash(job: NormalizedJob) -> str:
+    payload = asdict(job)
+    if not job.department:
+        payload.pop("department")
+    if job.updated_at is None:
+        payload.pop("updated_at")
     encoded = json.dumps(
-        asdict(job),
+        payload,
         ensure_ascii=False,
         sort_keys=True,
         separators=(",", ":"),
