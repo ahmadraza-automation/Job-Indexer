@@ -8,5 +8,6 @@ class ConnectorsConfig(AppConfig):
     name = "connectors"
 
     def ready(self) -> None:
+        import_module("connectors.ashby")
         import_module("connectors.greenhouse")
         import_module("connectors.lever")

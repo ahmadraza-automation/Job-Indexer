@@ -1,0 +1,91 @@
+{
+  "apiVersion": "1",
+  "jobs": [
+    {
+      "title": "Product Manager",
+      "location": "Houston, TX",
+      "secondaryLocations": [
+        {
+          "location": "San Francisco",
+          "address": {
+            "addressLocality": "San Francisco",
+            "addressRegion": "California",
+            "addressCountry": "USA"
+          }
+        },
+        {
+          "location": "Remote - US"
+        }
+      ],
+      "department": "Product",
+      "team": "Growth",
+      "isListed": true,
+      "isRemote": true,
+      "workplaceType": "Hybrid",
+      "descriptionHtml": "<p>Lead product strategy.</p>",
+      "descriptionPlain": "Lead product strategy.",
+      "publishedAt": "2025-03-01T12:30:45.123+00:00",
+      "employmentType": "FullTime",
+      "jobUrl": "https://jobs.ashbyhq.com/exampleco/product-manager",
+      "applyUrl": "https://jobs.ashbyhq.com/exampleco/product-manager/application",
+      "compensation": {
+        "compensationTierSummary": "$150K - $180K",
+        "scrapeableCompensationSalarySummary": "$150K - $180K",
+        "compensationTiers": []
+      }
+    },
+    {
+      "title": "Senior Software Engineer",
+      "location": "New York, NY",
+      "secondaryLocations": [],
+      "department": "Engineering",
+      "team": "Infrastructure",
+      "isListed": true,
+      "isRemote": false,
+      "workplaceType": "OnSite",
+      "descriptionHtml": "<div><p>Build resilient systems.</p></div>",
+      "descriptionPlain": "Build resilient systems.",
+      "publishedAt": "2025-04-15T09:00:00-04:00",
+      "employmentType": "Contract",
+      "jobUrl": "https://jobs.ashbyhq.com/exampleco/senior-software-engineer",
+      "applyUrl": "https://jobs.ashbyhq.com/exampleco/senior-software-engineer/application",
+      "compensation": null
+    },
+    {
+      "title": "People Operations Associate",
+      "location": null,
+      "department": "People",
+      "team": null,
+      "isListed": true,
+      "isRemote": null,
+      "descriptionHtml": null,
+      "descriptionPlain": null,
+      "publishedAt": null,
+      "employmentType": null,
+      "jobUrl": "https://jobs.ashbyhq.com/exampleco/people-operations-associate",
+      "applyUrl": null,
+      "compensation": {
+        "compensationTierSummary": "Compensation based on experience"
+      }
+    },
+    {
+      "title": "Unlisted Internal Role",
+      "location": "Remote",
+      "department": "Engineering",
+      "team": "Internal",
+      "isListed": false,
+      "isRemote": true,
+      "descriptionHtml": "<p>Internal role</p>",
+      "descriptionPlain": "Internal role",
+      "publishedAt": "2025-05-01T00:00:00Z",
+      "employmentType": "FullTime",
+      "jobUrl": "https://jobs.ashbyhq.com/exampleco/unlisted",
+      "applyUrl": "https://jobs.ashbyhq.com/exampleco/unlisted/application",
+      "compensation": null
+    }
+  ],
+  "compensation": {
+    "compensationTierSummary": "$81K - $87K",
+    "summaryComponents": []
+  }
+}
