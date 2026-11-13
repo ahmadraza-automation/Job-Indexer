@@ -9,3 +9,4 @@ class ConnectorsConfig(AppConfig):
 
     def ready(self) -> None:
         import_module("connectors.greenhouse")
+        import_module("connectors.lever")
