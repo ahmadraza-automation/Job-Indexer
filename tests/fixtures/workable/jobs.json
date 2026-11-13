@@ -1,0 +1,90 @@
+{
+  "name": "Example Co",
+  "description": "<p>Build a better future with us.</p>",
+  "jobs": [
+    {
+      "id": "3c47ff",
+      "title": "Account Executive",
+      "full_title": "Account Executive - GB/09/AE",
+      "shortcode": "AE84C38EE2",
+      "code": "GB/09/AE",
+      "state": "published",
+      "department": "Account Executive",
+      "department_hierarchy": [
+        {"id": 346500, "name": "Commercial"},
+        {"id": 346505, "name": "Sales"},
+        {"id": 346506, "name": "Account Executive"}
+      ],
+      "url": "https://exampleco.workable.com/jobs/3949357",
+      "application_url": "https://exampleco.workable.com/jobs/3949357/candidates/new",
+      "shortlink": "https://apply.workable.com/j/AE84C38EE2",
+      "location": {
+        "location_str": "London, England, United Kingdom",
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "region": "England",
+        "region_code": "England",
+        "city": "London",
+        "zip_code": "2142",
+        "telecommuting": false,
+        "workplace_type": "on_site"
+      },
+      "locations": [
+        {
+          "country_code": "GB",
+          "country_name": "United Kingdom",
+          "state_code": "England",
+          "city": "London"
+        },
+        {
+          "country_code": "US",
+          "country_name": "United States",
+          "state_code": "New York",
+          "city": "New York"
+        }
+      ],
+      "employment_type": "Full-time",
+      "created_at": "2025-01-15T10:30:00Z",
+      "full_description": "<div><p>Grow our customer relationships.</p><h2>Requirements</h2><p>Excellent communication skills.</p></div>",
+      "description": "<p>Grow our customer relationships.</p>",
+      "requirements": "<p>Excellent communication skills.</p>",
+      "benefits": "<p>Competitive benefits.</p>"
+    },
+    {
+      "id": "8a19bd",
+      "title": "Remote Software Engineer",
+      "shortcode": "SE92F10AB3",
+      "department": "Engineering",
+      "url": "https://exampleco.workable.com/jobs/4815290",
+      "application_url": "https://exampleco.workable.com/jobs/4815290/candidates/new",
+      "shortlink": "https://apply.workable.com/j/SE92F10AB3",
+      "location": {
+        "location_str": "Remote",
+        "country": "United States",
+        "country_code": "US",
+        "city": null,
+        "region": null,
+        "telecommuting": true,
+        "workplace_type": "remote"
+      },
+      "locations": [],
+      "employment_type": "Full-time",
+      "created_at": "2025-02-20T08:15:00-05:00",
+      "description": "<p>Build reliable software from anywhere.</p>"
+    },
+    {
+      "id": "2f731c",
+      "title": "People Operations Intern",
+      "shortcode": "PO55AA21CD",
+      "department": "People",
+      "url": "https://exampleco.workable.com/jobs/5109273",
+      "application_url": null,
+      "location": null,
+      "locations": null,
+      "employment_type": "Internship",
+      "created_at": null,
+      "full_description": null,
+      "description": null
+    }
+  ]
+}
