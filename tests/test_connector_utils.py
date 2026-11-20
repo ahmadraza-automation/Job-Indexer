@@ -23,6 +23,7 @@ FIXTURES = Path(__file__).parent / "fixtures"
         ("EUR 45k to 60k monthly", Decimal("45000"), Decimal("60000"), "EUR", "month"),
         ("£25 per hour", Decimal("25"), Decimal("25"), "GBP", "hour"),
         ("$80k-$100k/year", Decimal("80000"), Decimal("100000"), "USD", "year"),
+        ("$45,000 / year", Decimal("45000"), Decimal("45000"), "USD", "year"),
         ("100k/month", Decimal("100000"), Decimal("100000"), "", "month"),
         ("AUD 90,000 annually", Decimal("90000"), Decimal("90000"), "AUD", "year"),
         ("Salary negotiable", None, None, "", ""),

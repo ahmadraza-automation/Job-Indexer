@@ -54,24 +54,28 @@ def parse_salary(value: object) -> Salary:
 
     period = ""
     if re.search(
-        r"\b(?:per\s+year|a\s+year|annually|annual|yearly)\b|/(?:yr|year)\b",
+        r"\b(?:per\s+year|a\s+year|annually|annual|yearly)\b|/\s*(?:yr|year)\b",
         upper,
         re.IGNORECASE,
     ):
         period = "year"
     elif re.search(
-        r"\b(?:per\s+month|a\s+month|monthly)\b|/(?:mo|month)\b",
+        r"\b(?:per\s+month|a\s+month|monthly)\b|/\s*(?:mo|month)\b",
         upper,
         re.IGNORECASE,
     ):
         period = "month"
     elif re.search(
-        r"\b(?:per\s+hour|an?\s+hour|hourly)\b|/(?:hr|hour)\b",
+        r"\b(?:per\s+hour|an?\s+hour|hourly)\b|/\s*(?:hr|hour)\b",
         upper,
         re.IGNORECASE,
     ):
         period = "hour"
-    elif re.search(r"\b(?:per\s+week|weekly)\b|/week\b", upper, re.IGNORECASE):
+    elif re.search(
+        r"\b(?:per\s+week|weekly)\b|/\s*week\b",
+        upper,
+        re.IGNORECASE,
+    ):
         period = "week"
 
     range_match = _RANGE.search(text)

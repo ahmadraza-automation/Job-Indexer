@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "id": "118475",
+      "title": "Senior Marketing Designer",
+      "url": "https://workwithus.pinpointhq.com/en/postings/118475",
+      "description": "<p>Create thoughtful marketing design.</p>",
+      "employment_type": "full_time",
+      "employment_type_text": "Full Time",
+      "workplace_type": "remote",
+      "workplace_type_text": "Fully remote",
+      "department": {"id": "191", "name": "Marketing"},
+      "location": {"id": "5495", "name": "United Kingdom"},
+      "compensation": "£55,000 - £65,000 / year",
+      "compensation_minimum": 55000,
+      "compensation_maximum": 65000,
+      "compensation_currency": "GBP",
+      "compensation_frequency": "year",
+      "compensation_visible": true
+    },
+    {
+      "id": "53913",
+      "title": "Product Designer",
+      "url": "https://workwithus.pinpointhq.com/en/jobs/53913",
+      "description": null,
+      "employment_type": "contract_temp",
+      "workplace_type": null,
+      "department": null,
+      "location": null,
+      "compensation": null,
+      "compensation_minimum": null,
+      "compensation_maximum": null,
+      "compensation_currency": null,
+      "compensation_frequency": null,
+      "compensation_visible": false
+    }
+  ]
+}

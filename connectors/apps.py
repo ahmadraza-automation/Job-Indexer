@@ -9,7 +9,11 @@ class ConnectorsConfig(AppConfig):
 
     def ready(self) -> None:
         import_module("connectors.ashby")
+        import_module("connectors.breezy")
+        import_module("connectors.freshteam")
         import_module("connectors.greenhouse")
         import_module("connectors.lever")
+        import_module("connectors.pinpoint")
+        import_module("connectors.recruitee")
         import_module("connectors.smartrecruiters")
         import_module("connectors.workable")

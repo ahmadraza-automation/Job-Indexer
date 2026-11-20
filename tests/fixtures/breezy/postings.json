@@ -1,0 +1,31 @@
+[
+  {
+    "id": "e827dcc56072",
+    "friendly_id": "e827dcc56072-customer-success-agent",
+    "name": "Customer Success Agent",
+    "url": "https://jobs.example.breezy.hr/p/e827dcc56072-customer-success-agent",
+    "published_date": "2025-04-15T12:30:00Z",
+    "type": {"id": "fullTime", "name": "Full-Time"},
+    "location": {
+      "id": "42f8229dddec",
+      "country": {"name": "United States", "id": "US"},
+      "state": {"id": "FL", "name": "Florida"},
+      "primary": true,
+      "is_remote": true,
+      "name": "United States"
+    },
+    "department": "Customer Success",
+    "salary": "$45,000 / year",
+    "description": "<p>Help our customers succeed.</p>"
+  },
+  {
+    "id": "a1b2c3d4",
+    "name": "Office Coordinator",
+    "url": "https://jobs.example.breezy.hr/p/a1b2c3d4-office-coordinator",
+    "published_date": null,
+    "type": null,
+    "location": null,
+    "department": null,
+    "description": null
+  }
+]

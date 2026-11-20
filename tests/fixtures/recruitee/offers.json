@@ -1,0 +1,53 @@
+{
+  "offers": [
+    {
+      "company_name": "Example Co",
+      "title": "Senior Backend Engineer",
+      "id": 1853589,
+      "guid": "vdst3",
+      "slug": "senior-backend-engineer",
+      "department": "Engineering",
+      "status": "published",
+      "careers_url": "https://exampleco.recruitee.com/o/senior-backend-engineer",
+      "careers_apply_url": "https://exampleco.recruitee.com/o/senior-backend-engineer/c/new",
+      "published_at": "2025-03-01T10:00:00Z",
+      "description": "<p>Build reliable services.</p>",
+      "requirements": "<p>Know Python.</p>",
+      "remote": true,
+      "hybrid": false,
+      "on_site": false,
+      "locations": [
+        {
+          "name": "London",
+          "city": "London",
+          "country": "United Kingdom",
+          "country_code": "GB"
+        },
+        {
+          "name": "New York",
+          "city": "New York",
+          "country": "United States",
+          "country_code": "US"
+        }
+      ],
+      "employment_type_code": "fulltime_permanent",
+      "salary": {
+        "min": "100",
+        "max": "150",
+        "period": "hour",
+        "currency": "EUR"
+      }
+    },
+    {
+      "company_name": "Example Co",
+      "title": "People Operations Intern",
+      "id": 1853590,
+      "careers_url": "https://exampleco.recruitee.com/o/people-operations-intern",
+      "created_at": "2025-03-02 12:00:00 UTC",
+      "remote": false,
+      "on_site": true,
+      "description": null,
+      "requirements": null
+    }
+  ]
+}

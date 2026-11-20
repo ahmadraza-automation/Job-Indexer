@@ -1,0 +1,52 @@
+{
+  "jobs": [
+    {
+      "id": 2000008856,
+      "title": "Business Development Manager",
+      "description": "<p>Build customer relationships.</p>",
+      "job_type": 2,
+      "created_at": "2025-05-10T09:30:00.000Z",
+      "url": "https://exampleco.freshteam.com/jobs/Abc123/business-development-manager",
+      "unique_id": "Abc123",
+      "remote": true,
+      "branch_id": 2000003484,
+      "job_role_id": 2000067633,
+      "preferred_remote_job_locations": "Bengaluru, India | Delhi, India",
+      "ctc_details": {
+        "min": 80000,
+        "max": 120000,
+        "currency": "INR",
+        "period": "year"
+      }
+    },
+    {
+      "id": 2000008890,
+      "title": "Product Manager",
+      "description": null,
+      "job_type": null,
+      "created_at": null,
+      "url": "https://exampleco.freshteam.com/jobs/Def456/product-manager",
+      "unique_id": "Def456",
+      "remote": false,
+      "branch_id": 2000003484,
+      "job_role_id": null,
+      "ctc_details": null
+    }
+  ],
+  "branches": [
+    {
+      "id": 2000003484,
+      "city": "Bengaluru",
+      "country_code": "IN",
+      "currency": "INR",
+      "location": "Bengaluru, India"
+    }
+  ],
+  "job_roles": [
+    {
+      "id": 2000067633,
+      "name": "Business Development",
+      "deleted": false
+    }
+  ]
+}
