@@ -11,4 +11,5 @@ class ConnectorsConfig(AppConfig):
         import_module("connectors.ashby")
         import_module("connectors.greenhouse")
         import_module("connectors.lever")
+        import_module("connectors.smartrecruiters")
         import_module("connectors.workable")

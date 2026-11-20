@@ -1,0 +1,42 @@
+{
+  "limit": 100,
+  "offset": 0,
+  "totalFound": 3,
+  "content": [
+    {
+      "id": "12345",
+      "name": "Senior Software Engineer",
+      "releasedDate": "2025-01-15T10:30:00Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "US",
+        "remote": false
+      },
+      "department": {"id": "engineering", "label": "Engineering"},
+      "typeOfEmployment": {"id": "permanent", "label": "Full-time"},
+      "ref": "https://api.smartrecruiters.com/api-v1/companies/exampleco/postings/12345"
+    },
+    {
+      "id": "67890",
+      "name": "People Operations Associate",
+      "releasedDate": null,
+      "location": null,
+      "department": null,
+      "typeOfEmployment": null,
+      "ref": "https://api.smartrecruiters.com/api-v1/companies/exampleco/postings/67890"
+    },
+    {
+      "id": "24680",
+      "name": "Product Designer",
+      "releasedDate": "2025-03-01T12:00:00-05:00",
+      "location": {
+        "city": "Remote",
+        "remote": true
+      },
+      "department": {"label": "Product"},
+      "typeOfEmployment": {"label": "Contract"},
+      "ref": "https://api.smartrecruiters.com/api-v1/companies/exampleco/postings/24680"
+    }
+  ]
+}

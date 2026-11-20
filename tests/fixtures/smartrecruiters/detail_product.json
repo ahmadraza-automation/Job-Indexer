@@ -1,0 +1,21 @@
+{
+  "id": "24680",
+  "name": "Product Designer",
+  "releasedDate": "2025-03-01T12:00:00-05:00",
+  "location": {
+    "city": "Remote",
+    "remote": true
+  },
+  "department": {"label": "Product"},
+  "typeOfEmployment": {"label": "Contract"},
+  "postingUrl": "https://jobs.smartrecruiters.com/exampleco/24680-product-designer",
+  "applyUrl": "https://jobs.smartrecruiters.com/exampleco/24680/apply",
+  "jobAd": {
+    "sections": {
+      "jobDescription": {
+        "title": "Job Description",
+        "text": "Design useful products."
+      }
+    }
+  }
+}

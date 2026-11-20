@@ -1,0 +1,23 @@
+{
+  "id": "12345",
+  "name": "Senior Software Engineer",
+  "releasedDate": "2025-01-15T10:30:00Z",
+  "location": {
+    "city": "New York",
+    "region": "NY",
+    "country": "US",
+    "remote": false
+  },
+  "department": {"id": "engineering", "label": "Engineering"},
+  "typeOfEmployment": {"id": "permanent", "label": "Full-time"},
+  "postingUrl": "https://jobs.smartrecruiters.com/exampleco/12345-senior-software-engineer",
+  "applyUrl": "https://jobs.smartrecruiters.com/exampleco/12345/apply",
+  "jobAd": {
+    "sections": {
+      "jobDescription": {
+        "title": "Job Description",
+        "text": "<p>Build reliable services for our customers.</p>"
+      }
+    }
+  }
+}
