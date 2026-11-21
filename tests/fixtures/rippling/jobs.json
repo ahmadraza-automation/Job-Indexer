@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "id": "rp-401",
+      "title": "Security Engineer",
+      "description": "<p>Protect customer data.</p>",
+      "location": {"city": "San Francisco", "state": "CA", "country": "USA"},
+      "department": {"name": "Security"},
+      "employmentType": "Full-time",
+      "isRemote": true,
+      "jobUrl": "https://ats.rippling.com/exampleco/jobs/rp-401",
+      "applyUrl": "https://ats.rippling.com/exampleco/jobs/rp-401/apply",
+      "publishedAt": "2026-10-17T14:45:00Z",
+      "updatedAt": "2026-10-20T09:00:00Z"
+    },
+    {
+      "id": "rp-402",
+      "name": "Finance Operations",
+      "location": ["New York, NY", "Remote"],
+      "department": "Finance",
+      "employment_type": "contract",
+      "remote": false
+    }
+  ]
+}

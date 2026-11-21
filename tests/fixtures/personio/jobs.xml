@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workzag_jobs>
+  <position>
+    <id>personio-101</id>
+    <name>Senior Software Engineer</name>
+    <office>Berlin</office>
+    <department>Engineering</department>
+    <employmentType>PERMANENT</employmentType>
+    <recruitingCategory>Experienced Professionals</recruitingCategory>
+    <link>https://exampleco.jobs.personio.de/job/101</link>
+    <date>2026-10-20</date>
+    <updatedAt>2026-10-22T10:30:00+02:00</updatedAt>
+    <jobDescriptions>
+      <jobDescription>
+        <name>About the role</name>
+        <value>&lt;p&gt;Build reliable systems.&lt;/p&gt;</value>
+      </jobDescription>
+    </jobDescriptions>
+  </position>
+  <position>
+    <id>personio-102</id>
+    <name>Remote Support Specialist</name>
+    <office>Remote - Europe</office>
+    <department>Customer Success</department>
+    <employmentType>PART-TIME</employmentType>
+    <link>https://exampleco.jobs.personio.de/job/102</link>
+  </position>
+</workzag_jobs>

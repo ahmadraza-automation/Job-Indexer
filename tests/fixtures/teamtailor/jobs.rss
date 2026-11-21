@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:tt="https://teamtailor.com/">
+  <channel>
+    <title>Example Co jobs</title>
+    <item>
+      <guid>tt-job-201</guid>
+      <title>Platform Engineer</title>
+      <link>https://exampleco.teamtailor.com/jobs/201-platform-engineer</link>
+      <description>&lt;p&gt;Operate the platform.&lt;/p&gt;</description>
+      <pubDate>Tue, 20 Oct 2026 09:15:00 +0000</pubDate>
+      <tt:location>Stockholm, Sweden</tt:location>
+      <tt:department>Infrastructure</tt:department>
+      <tt:employment_type>full-time</tt:employment_type>
+      <tt:remote>true</tt:remote>
+      <tt:updated>2026-10-21T12:00:00Z</tt:updated>
+    </item>
+    <item>
+      <guid>tt-job-202</guid>
+      <title>QA Analyst</title>
+      <link>https://exampleco.teamtailor.com/jobs/202-qa-analyst</link>
+      <description></description>
+      <pubDate>2026-10-18</pubDate>
+    </item>
+  </channel>
+</rss>

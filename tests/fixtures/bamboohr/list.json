@@ -1,0 +1,21 @@
+{
+  "result": [
+    {
+      "id": 301,
+      "jobOpeningName": "Data Engineer",
+      "departmentLabel": "Data",
+      "location": {"city": "Austin", "state": "Texas", "country": "USA"},
+      "employmentStatus": "Full-Time",
+      "isRemote": false,
+      "postedDate": "2026-10-19",
+      "jobUrl": "https://exampleco.bamboohr.com/careers/301"
+    },
+    {
+      "id": 302,
+      "jobOpeningName": "Developer Advocate",
+      "departmentLabel": "Marketing",
+      "employmentStatus": "Contract",
+      "isRemote": true
+    }
+  ]
+}
