@@ -20,4 +20,5 @@ class ConnectorsConfig(AppConfig):
         import_module("connectors.rippling")
         import_module("connectors.smartrecruiters")
         import_module("connectors.teamtailor")
+        import_module("connectors.workday")
         import_module("connectors.workable")

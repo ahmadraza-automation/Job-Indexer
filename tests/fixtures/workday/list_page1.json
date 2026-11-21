@@ -1,0 +1,19 @@
+{
+  "total": 21,
+  "jobPostings": [
+    {
+      "title": "Senior Backend Engineer",
+      "externalPath": "/job/REQ-1001/Senior-Backend-Engineer",
+      "locationsText": "Seattle, WA",
+      "postedOn": "Posted 3 Days Ago",
+      "bulletFields": ["REQ-1001", "Full time"]
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "externalPath": "/job/REQ-1002/Site-Reliability-Engineer",
+      "locationsText": "Remote - US",
+      "postedOn": "Posted Today",
+      "bulletFields": ["REQ-1002", "Full time"]
+    }
+  ]
+}

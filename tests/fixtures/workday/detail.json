@@ -1,0 +1,12 @@
+{
+  "jobPostingInfo": {
+    "title": "Senior Backend Engineer",
+    "jobReqId": "REQ-1001",
+    "description": "<p>Build <strong>reliable</strong> systems.</p>",
+    "location": "Seattle, Washington, United States",
+    "timeType": "Full time",
+    "startDate": "2026-10-18",
+    "externalUrl": "https://example.com/jobs/REQ-1001",
+    "remoteType": "Remote"
+  }
+}

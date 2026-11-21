@@ -14,4 +14,5 @@
 | Rippling | ATS | Yes | `tests/fixtures/rippling/` |
 | SmartRecruiters | ATS | Yes | `tests/fixtures/smartrecruiters/` |
 | Teamtailor | ATS | Yes | `tests/fixtures/teamtailor/` |
+| Workday | ATS | Yes | `tests/fixtures/workday/` |
 | Workable | ATS | Yes | `tests/fixtures/workable/` |
