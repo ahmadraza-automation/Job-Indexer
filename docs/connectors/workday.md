@@ -30,6 +30,10 @@ available and is normalized into the common job. Details supply description,
 job requisition ID, employment type, remote type, start date, and external
 apply URL when available.
 
+External IDs are always derived from the list posting's full `externalPath`.
+Detail `jobReqId` values are retained in the detail payload and used only for
+normalization metadata, never for external-ID selection.
+
 Posted labels such as `Posted Today`, `Posted 3 Days Ago`, and
 `Posted 30+ Days Ago` are converted to approximate UTC dates at local midnight.
 An ISO or date `startDate` from job detail is preferred.

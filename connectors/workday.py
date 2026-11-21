@@ -149,8 +149,9 @@ class WorkdayConnector(BaseConnector):
                 url=base_url,
             )
 
-        job_req_id = _string_value(detail.get("jobReqId"))
-        external_id = job_req_id or external_path
+        # External IDs must come only from list data so detail availability does
+        # not change a posting's identity.
+        external_id = external_path
         if not external_id:
             bullet_fields = item.get("bulletFields")
             if isinstance(bullet_fields, list):

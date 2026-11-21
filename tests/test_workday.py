@@ -106,7 +106,7 @@ def test_workday_paginates_multiple_pages_and_normalizes_details() -> None:
     assert json.loads(post_requests[1].content)["offset"] == 20
     assert len(jobs) == 3
     job = jobs[0]
-    assert job.external_id == "REQ-1001"
+    assert job.external_id == "/job/REQ-1001/Senior-Backend-Engineer"
     assert job.title == "Senior Backend Engineer"
     assert job.company == "Example Co"
     assert job.location == "Seattle, Washington, United States"
@@ -199,6 +199,40 @@ def test_detail_failure_falls_back_to_list_data() -> None:
     assert jobs[0].description == ""
     assert jobs[0].posted_at is not None
     assert jobs[0].raw["detail"] is None
+
+
+def test_external_id_is_stable_with_and_without_detail_success() -> None:
+    def successful_handler(request: httpx.Request) -> httpx.Response:
+        if request.method == "POST":
+            payload = _fixture("list_page1.json")
+            payload["jobPostings"] = payload["jobPostings"][:1]
+            payload["total"] = 1
+            return httpx.Response(200, json=payload)
+        return httpx.Response(200, json=_fixture("detail.json"))
+
+    def failed_handler(request: httpx.Request) -> httpx.Response:
+        if request.method == "POST":
+            payload = _fixture("list_page1.json")
+            payload["jobPostings"] = payload["jobPostings"][:1]
+            payload["total"] = 1
+            return httpx.Response(200, json=payload)
+        return httpx.Response(404)
+
+    successful, successful_client = _connector(successful_handler)
+    failed, failed_client = _connector(failed_handler)
+    try:
+        with_detail = list(successful.discover_jobs(_source()))
+        without_detail = list(failed.discover_jobs(_source()))
+    finally:
+        successful.close()
+        failed.close()
+        successful_client.close()
+        failed_client.close()
+
+    assert with_detail[0].external_id == without_detail[0].external_id
+    assert with_detail[0].external_id == (
+        "/job/REQ-1001/Senior-Backend-Engineer"
+    )
 
 
 def test_fetch_details_false_skips_detail_requests() -> None:
