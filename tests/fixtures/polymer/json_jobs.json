@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "id": "polymer-json-201",
+      "title": "Synthetic Data Analyst",
+      "company": "Example Co",
+      "description": "<p>Analyze synthetic data.</p>",
+      "department": "Analytics",
+      "location": "Sample City",
+      "employmentType": "CONTRACT",
+      "isRemote": true,
+      "url": "/jobs/polymer-json-201",
+      "datePosted": "2026-10-25T10:00:00Z"
+    }
+  ]
+}
