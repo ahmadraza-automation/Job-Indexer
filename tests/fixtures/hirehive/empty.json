@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "page": 1,
+    "page_size": 100,
+    "total_items": 0,
+    "total_pages": 0,
+    "has_next_page": false,
+    "has_previous_page": false
+  },
+  "links": {
+    "next": null
+  },
+  "items": []
+}

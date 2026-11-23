@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h1>Current Job Listings</h1>
+    <div id="job_listings" class="bootstrap-area">
+      <job-listings v-bind="componentData"></job-listings>
+    </div>
+    <script>
+      window.bootstrapVue("#job_listings", ["JobListings"], {
+        componentData: {
+          organizationId: 100,
+          domainId: 200,
+          domainName: "applicantpro.com",
+          subdomainName: "exampleco"
+        }
+      });
+    </script>
+  </body>
+</html>

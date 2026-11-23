@@ -1,0 +1,18 @@
+{
+  "jobs": [
+    {
+      "id": "applicantpro-101",
+      "title": "Synthetic Backend Engineer",
+      "company": "Example Co",
+      "description": "<p>Build reliable synthetic systems.</p>",
+      "location": "Sample City, Example Region, ZZ",
+      "employmentType": "FULL_TIME",
+      "isRemote": true,
+      "url": "/jobs/applicantpro-101",
+      "applicationUrl": "/apply/applicantpro-101",
+      "datePosted": "2026-10-20T09:30:00Z",
+      "department": "Engineering"
+    }
+  ],
+  "next": "/jobs?page=2"
+}

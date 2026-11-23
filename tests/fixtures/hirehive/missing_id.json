@@ -1,0 +1,8 @@
+{
+  "items": [
+    {
+      "title": "Synthetic Job Without Identifier",
+      "description": {"html": "<p>Missing stable ID.</p>"}
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "page": 2,
+    "page_size": 100,
+    "total_items": 2,
+    "total_pages": 2,
+    "has_next_page": false,
+    "has_previous_page": true
+  },
+  "links": {
+    "next": null
+  },
+  "items": [
+    {
+      "id": "hirehive-102",
+      "title": "Synthetic Operations Associate",
+      "location": "",
+      "country": null,
+      "description": {"html": ""},
+      "hosted_url": "https://exampleco.hirehive.com/synthetic-operations-associate"
+    }
+  ]
+}

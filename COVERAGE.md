@@ -2,15 +2,21 @@
 
 | Platform | Kind | Implemented | Test fixture | Live status |
 |---|---|---:|---|---|
+| ApplicantPro | ATS | Yes | `tests/fixtures/applicantpro/` | Live checked; listing API TODO |
 | Ashby | ATS | Yes | `tests/fixtures/ashby/` | Live checked |
 | BambooHR | ATS | Yes | `tests/fixtures/bamboohr/` | Live checked |
 | Breezy HR | ATS | Yes | `tests/fixtures/breezy/` | Live checked |
+| CareerPlug | ATS | Yes | `tests/fixtures/careerplug/` | Live checked; pagination TODO |
 | Comeet | ATS | Yes | `tests/fixtures/comeet/` | Fixture-tested, live check pending |
 | Dover | ATS | Yes | `tests/fixtures/dover/` | Fixture-tested, live check pending |
 | Freshteam | ATS | Yes | `tests/fixtures/freshteam/` | Live checked |
 | Gem | ATS | Yes | `tests/fixtures/gem/` | Fixture-tested, live check pending |
+| GoHire | ATS | Yes | `tests/fixtures/gohire/` | Live checked; open-job listing TODO |
 | Greenhouse | ATS | Yes | `tests/fixtures/greenhouse/` | Live checked |
 | HiBob | ATS | Yes | `tests/fixtures/hibob/` | Fixture-tested, live check pending |
+| HireHive | ATS | Yes | `tests/fixtures/hirehive/` | Live checked; salary TODO |
+| Hireology | ATS | Yes | `tests/fixtures/hireology/` | Live checked; pagination TODO |
+| HiringThing | ATS | Yes | `tests/fixtures/hiringthing/` | Live checked; feed pagination TODO |
 | JOIN.com | ATS | Yes | `tests/fixtures/join/` | Fixture-tested, live check pending |
 | JazzHR | ATS | Yes | `tests/fixtures/jazzhr/` | Fixture-tested, live check pending |
 | Jobvite | ATS | Yes | `tests/fixtures/jobvite/` | Fixture-tested, live check pending |

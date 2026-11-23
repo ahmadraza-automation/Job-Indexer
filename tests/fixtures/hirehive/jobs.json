@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "page": 1,
+    "page_size": 100,
+    "total_items": 2,
+    "total_pages": 2,
+    "has_next_page": true,
+    "has_previous_page": false
+  },
+  "links": {
+    "next": "/api/v2/jobs?page=2&page_size=100"
+  },
+  "items": [
+    {
+      "id": "hirehive-101",
+      "title": "Synthetic Backend Engineer",
+      "location": "Sample City",
+      "country": {"name": "Example Country", "code": "ZZ"},
+      "description": {"html": "<p>Build reliable synthetic systems.</p>"},
+      "category": {"id": "category-1", "name": "Engineering"},
+      "type": {"type": "FullTime", "name": "Full Time"},
+      "published_date": "2026-10-20T09:30:00Z",
+      "created_date": "2026-10-21T11:00:00Z",
+      "hosted_url": "https://exampleco.hirehive.com/synthetic-backend-engineer",
+      "salary": null,
+      "compensation_tiers": [
+        {
+          "label": null,
+          "type": "range",
+          "interval": "annual",
+          "currency_code": "USD",
+          "min_value": 70000,
+          "max_value": 90000,
+          "information": null
+        }
+      ]
+    }
+  ]
+}

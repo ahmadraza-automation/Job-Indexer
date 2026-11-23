@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example Co Jobs</title>
+    <link>https://exampleco.hiringthing.com</link>
+    <description>Open synthetic positions</description>
+    <item>
+      <title>Synthetic Operations Associate</title>
+      <link>https://exampleco.hiringthing.com/job/102/synthetic-operations-associate</link>
+      <category>Part Time</category>
+      <location>Sample City</location>
+      <media:description type="html"><![CDATA[<p>Support synthetic operations.</p>]]></media:description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example Co Jobs</title>
+    <link>https://exampleco.hiringthing.com</link>
+    <description>Open synthetic positions</description>
+    <atom:link rel="next" href="?page=2" />
+    <item>
+      <title>Synthetic Backend Engineer</title>
+      <link>https://exampleco.hiringthing.com/job/101/synthetic-backend-engineer</link>
+      <description>Build reliable synthetic systems.</description>
+      <category>Full Time</category>
+      <location>Sample City, Example Region, ZZ</location>
+      <pubDate>Tue, 20 Oct 2026 09:30:00 GMT</pubDate>
+      <media:description type="html"><![CDATA[<p>Build reliable synthetic systems.</p>]]></media:description>
+    </item>
+  </channel>
+</rss>

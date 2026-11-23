@@ -1,0 +1,14 @@
+{
+  "jobs": [
+    {
+      "id": "applicantpro-102",
+      "title": "Synthetic Operations Associate",
+      "company": "Example Co",
+      "description": "<p>Support synthetic operations.</p>",
+      "location": "Sample City",
+      "employmentType": "PART_TIME",
+      "url": "/jobs/applicantpro-102",
+      "applicationUrl": "/apply/applicantpro-102"
+    }
+  ]
+}
