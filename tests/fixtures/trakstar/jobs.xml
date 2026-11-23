@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:job="https://recruiterbox.com/rss/job/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example Co Jobs</title>
+    <link>https://exampleco.hire.trakstar.com/</link>
+    <description>Current synthetic open positions</description>
+    <atom:link rel="self" href="https://exampleco.hire.trakstar.com/jobfeeds/exampleco" />
+    <item>
+      <title>Synthetic Backend Engineer</title>
+      <link>https://exampleco.hire.trakstar.com/jobs/trakstar-101</link>
+      <description><![CDATA[
+        <div id="job_description">
+          <p>Build reliable synthetic systems.</p>
+          <p>Compensation: $80,000-$100,000 per year.</p>
+        </div>
+        <div id="how_to_apply">
+          <a href="https://exampleco.hire.trakstar.com/apply/trakstar-101">Apply to this job</a>
+        </div>
+      ]]></description>
+      <pubDate>Tue, 20 Oct 2026 09:30:00 GMT</pubDate>
+      <guid>https://exampleco.hire.trakstar.com/jobs/trakstar-101</guid>
+      <job:locationCity>Sample City</job:locationCity>
+      <job:locationState>Example Region</job:locationState>
+      <job:locationCountry>ZZ</job:locationCountry>
+      <job:positionType>full_time</job:positionType>
+      <job:team>Engineering</job:team>
+    </item>
+    <item>
+      <title>Synthetic Data Engineer</title>
+      <link>https://exampleco.hire.trakstar.com/jobs/trakstar-102</link>
+      <description><![CDATA[<div id="job_description"><p>Maintain synthetic data pipelines.</p></div>]]></description>
+      <pubDate>Wed, 21 Oct 2026 09:30:00 GMT</pubDate>
+      <guid>https://exampleco.hire.trakstar.com/jobs/trakstar-102</guid>
+      <job:locationCity>Sample City</job:locationCity>
+      <job:locationState>Example Region</job:locationState>
+      <job:locationCountry>ZZ</job:locationCountry>
+      <job:positionType>full_time</job:positionType>
+      <job:team>Data</job:team>
+    </item>
+  </channel>
+</rss>

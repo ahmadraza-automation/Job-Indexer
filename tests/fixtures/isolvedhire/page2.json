@@ -1,0 +1,17 @@
+{
+  "jobs": [
+    {
+      "id": "synthetic-102",
+      "title": "Synthetic Data Engineer",
+      "company": "Example Co",
+      "description": "<p>Maintain synthetic data pipelines.</p>",
+      "location": "Sample City, Example Region, ZZ",
+      "url": "/jobs/synthetic-102",
+      "applicationUrl": "/apply/synthetic-102",
+      "employmentType": "FULL_TIME",
+      "isRemote": false,
+      "datePosted": "2026-10-21T09:30:00Z",
+      "department": "Data"
+    }
+  ]
+}
