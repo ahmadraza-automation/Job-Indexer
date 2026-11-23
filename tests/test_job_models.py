@@ -46,7 +46,7 @@ def test_job_source_is_unique_per_source_external_id(
 def test_jobs_can_have_multiple_sources(source: Source, job: Job) -> None:
     other_source = Source.objects.create(
         platform="example-board",
-        kind=Source.Kind.BOARD,
+        kind=Source.Kind.JOB_BOARD,
         name="Example Board",
         base_url="https://board.example.com",
     )

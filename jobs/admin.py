@@ -8,13 +8,20 @@ class SourceAdmin(admin.ModelAdmin):
     list_display = (
         "platform",
         "name",
-        "kind",
-        "is_active",
-        "check_interval_minutes",
+        "source_status",
+        "last_success_at",
         "consecutive_failures",
     )
-    list_filter = ("kind", "is_active")
+    list_filter = ("platform", "kind", "is_active")
     search_fields = ("platform", "name")
+
+    @admin.display(description="Status")
+    def source_status(self, source: Source) -> str:
+        if not source.is_active:
+            return "Inactive"
+        if source.consecutive_failures:
+            return "Failing"
+        return "Active"
 
 
 @admin.register(Company)

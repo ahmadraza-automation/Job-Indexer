@@ -392,7 +392,7 @@ def test_matching_fingerprint_from_another_source_reuses_canonical_job(
     ingest.run_source(source)
     other_source = Source.objects.create(
         platform="test-board",
-        kind=Source.Kind.BOARD,
+        kind=Source.Kind.JOB_BOARD,
         name="Test Board",
         base_url="https://board.example.com",
     )
@@ -415,6 +415,50 @@ def test_matching_fingerprint_from_another_source_reuses_canonical_job(
     assert Job.objects.get().title == "Software Engineer"
     assert JobSource.objects.count() == 2
     assert JobSource.objects.get(source=other_source).job_id == Job.objects.get().pk
+
+
+@pytest.mark.django_db
+def test_missed_runs_are_tracked_per_source(
+    source: Source, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    jobs = [
+        make_job(external_id=f"job-{number}", title=f"Engineer {number}")
+        for number in range(10)
+    ]
+    use_connector(monkeypatch, jobs)
+    ingest.run_source(source)
+    other_source = Source.objects.create(
+        platform=source.platform,
+        kind=Source.Kind.ATS,
+        name="Second Employer",
+        base_url="https://second.example.com",
+        config={"company_slug": "second"},
+    )
+    other_job = make_job(
+        external_id="other-job",
+        title="Product Engineer",
+        company="Second Employer",
+    )
+    monkeypatch.setattr(
+        ingest,
+        "get_connector",
+        lambda platform: FakeConnector([other_job]),
+    )
+    ingest.run_source(other_source)
+
+    monkeypatch.setattr(
+        ingest,
+        "get_connector",
+        lambda platform: FakeConnector(jobs[1:]),
+    )
+    ingest.run_source(source)
+    ingest.run_source(source)
+
+    missing_link = JobSource.objects.get(source=source, external_id="job-0")
+    other_link = JobSource.objects.get(source=other_source, external_id="other-job")
+    assert missing_link.status == JobSource.Status.CLOSED
+    assert other_link.status == JobSource.Status.OPEN
+    assert other_link.missed_runs == 0
 
 
 @pytest.mark.django_db

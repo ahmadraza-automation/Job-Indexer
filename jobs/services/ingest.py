@@ -199,6 +199,7 @@ def _mark_failed(fetch_run: FetchRun, source: Source, exc: Exception) -> None:
         http_status=http_status,
     )
     Source.objects.filter(pk=source.pk).update(
+        last_failure_at=now,
         consecutive_failures=F("consecutive_failures") + 1
     )
     fetch_run.refresh_from_db()

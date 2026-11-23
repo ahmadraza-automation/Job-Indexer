@@ -1,3 +1,6 @@
+import hashlib
+from urllib.parse import urlsplit
+
 from django.contrib.postgres.indexes import GinIndex
 from django.contrib.postgres.search import SearchVectorField
 from django.db import models
@@ -6,23 +9,84 @@ from django.db import models
 class Source(models.Model):
     class Kind(models.TextChoices):
         ATS = "ats", "ATS"
-        BOARD = "board", "Job board"
+        JOB_BOARD = "job_board", "Job board"
 
-    platform = models.CharField(max_length=100, unique=True)
+    IDENTITY_CONFIG_KEYS = {
+        "greenhouse": ("board_token",),
+        "ashby": ("board_name",),
+        "workable": ("subdomain",),
+        "smartrecruiters": ("company",),
+    }
+
+    platform = models.CharField(max_length=100)
     kind = models.CharField(max_length=10, choices=Kind.choices)
     name = models.CharField(max_length=200)
     base_url = models.URLField()
     config = models.JSONField(default=dict, blank=True)
+    identity_key = models.CharField(max_length=64, editable=False)
     is_active = models.BooleanField(default=True)
     check_interval_minutes = models.PositiveIntegerField(default=60)
     last_success_at = models.DateTimeField(null=True, blank=True)
+    last_failure_at = models.DateTimeField(null=True, blank=True)
     consecutive_failures = models.PositiveIntegerField(default=0)
 
     class Meta:
         indexes = [
             models.Index(fields=["kind", "is_active"], name="source_kind_active_idx")
         ]
+        constraints = [
+            models.UniqueConstraint(
+                fields=["platform", "identity_key"],
+                name="source_platform_identity_uniq",
+            )
+        ]
         ordering = ["name"]
+
+    def save(self, *args, **kwargs) -> None:
+        self.identity_key = self.make_identity_key(
+            self.platform,
+            self.base_url,
+            self.config,
+        )
+        update_fields = kwargs.get("update_fields")
+        if update_fields is not None:
+            kwargs["update_fields"] = {*update_fields, "identity_key"}
+        super().save(*args, **kwargs)
+
+    @staticmethod
+    def make_identity_key(platform: str, base_url: str, config: dict) -> str:
+        identity = ""
+        if platform == "workday" and isinstance(config, dict):
+            tenant = config.get("tenant")
+            site = config.get("site")
+            if isinstance(tenant, str) and tenant.strip() and isinstance(site, str) and site.strip():
+                identity = f"workday:{tenant.strip()}:{site.strip()}".casefold()
+
+        identity_keys = Source.IDENTITY_CONFIG_KEYS.get(
+            platform,
+            ("company_slug", "board_token", "board_name", "company", "subdomain"),
+        )
+        for key in identity_keys:
+            if identity:
+                break
+            value = config.get(key) if isinstance(config, dict) else None
+            if isinstance(value, str) and value.strip():
+                identity = f"slug:{value.strip().casefold()}"
+                break
+
+        # A configured platform slug is a stronger identity than its URL.
+        if not identity:
+            parsed = urlsplit(base_url.strip())
+            host = (parsed.hostname or "").casefold()
+            if parsed.port and (parsed.scheme.lower(), parsed.port) not in {
+                ("http", 80),
+                ("https", 443),
+            }:
+                host = f"{host}:{parsed.port}"
+            identity = "|".join(
+                (parsed.scheme.lower(), host, parsed.path.rstrip("/"), parsed.query)
+            ).casefold()
+        return hashlib.sha256(identity.encode("utf-8")).hexdigest()
 
     def __str__(self) -> str:
         return self.name
